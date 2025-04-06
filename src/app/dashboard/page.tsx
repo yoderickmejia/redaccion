@@ -8,31 +8,27 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import {
-  Bell,
+
   BookOpen,
-  Calendar,
-  ChevronRight,
-  Clock,
-  Columns4,
+
   Download,
   GraduationCap,
-  Home,
+
   Languages,
   LogOut,
   Menu,
   Moon,
-  Settings,
+
   Sun,
-  User,
+
 } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Badge } from "@/components/ui/badge"
+
 import { Progress } from "@/components/ui/progress"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"

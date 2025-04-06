@@ -12,13 +12,11 @@ import {
   Languages,
   Menu,
   Star,
-  Users,
 } from "lucide-react";
 // Importa el ThemeToggle al inicio del archivo
 import { ThemeToggle } from "@/components/theme-toggle";
 
 import foto from "@/app/assets/images.jpg";
-import foto1 from "@/app/assets/images.jpg";
 import avatar1 from "@/app/assets/avatar1.jpg";
 import avatar2 from "@/app/assets/avatar2.jpeg";
 import avatar3 from "@/app/assets/avatar3.jpg";

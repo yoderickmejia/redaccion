@@ -3,42 +3,29 @@ import React, { useState }  from "react"
 import dynamic from "next/dynamic";
 import { useEffect } from "react"
 import { useRouter } from "next/navigation"
-import Image from "next/image"
+
 import { Button } from "@/components/ui/button"
-import { Progress } from "@/components/ui/progress"
 import { Separator } from "@/components/ui/separator"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
 import {
   ArrowLeft,
-  BookOpen,
   Check,
   ChevronRight,
   ChevronLeft,
   Clock,
-  ExternalLink,
   FileText,
   LogOut,
   Menu,
   Moon,
-  Pause,
   Play,
-  Settings,
-  Share2,
-  Star,
   Sun,
-  ThumbsUp,
-  User,
-  Volume2,
-  VolumeX,
-  Users,
 } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"

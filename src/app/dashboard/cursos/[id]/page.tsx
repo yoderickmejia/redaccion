@@ -3,32 +3,7 @@
 import { useEffect, useState } from "react"
 import { useParams, useRouter } from "next/navigation"
 import { useTheme } from "next-themes"
-import {
-  ArrowLeft,
-  Check,
-  ChevronLeftIcon,
-  ChevronRight,
-  Clock,
-  Download,
-  ExternalLink,
-  FileText,
-  GraduationCap,
-  LogOut,
-  Menu,
-  MessageSquare,
-  Moon,
-  Pause,
-  Play,
-  Share2,
-  Settings,
-  Sun,
-  ThumbsUp,
-  User,
-  Volume2,
-  VolumeX,
-  X as XIcon,
-} from "lucide-react"
-import Image from "next/image"
+
 import {
   Button
 } from "@/components/ui/button"
