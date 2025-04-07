@@ -47,8 +47,8 @@ const Videos: { [key: number]: { videoURL: string } } = {
 // Datos del curso 1
 const courseData = {
   id: 1,
-  title: "Marcadores Textuales",
-  description: "Aprende sobre los diferentes tipos de marcadores textuales.",
+  title: "Los Deícticos",
+  description: "Aprende sobre los diferentes tipos de elementos deícticos.",
   level: "Intermedio",
   totalLessons: 4,
   completedLessons: 0,
@@ -61,199 +61,206 @@ const courseData = {
   lessons: [
     {
       id: 101,
-      title: "Los marcadores textuales",
+      title: "Los elementos deícticos",
+ 
+  
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video1.mp4",
-      content: "<p>Contenido de la lección sobre marcadores textuales</p>"
+      content: "<p>Contenido de la lección sobre elementos deícticos</p>"
     },
     {
       id: 102,
-      title: "Marcadores textuales y sus tipos",
+      title: "Los deícticos y sus tipos",
+     
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video2.mp4",
-      content: "<p>Contenido sobre los tipos de marcadores textuales</p>"
+      content: "<p>Contenido sobre los tipos de elementos deícticos</p>"
     },
     {
       id: 103,
-      title: "Marcadores textuales y sus tipos",
+      title: "Los deícticos y sus usos",
+     
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video.mp4",
-      content: "<p>Contenido sobre los tipos de marcadores textuales</p>"
+      content: "<p>Contenido sobre los usos de elementos deícticos</p>"
     },
+  
     {
       id: 104,
-      title: "Evaluación:  marcadores textuales",
+      title: "Evaluación: Los deícticos",
+     
       isCompleted: false,
       type: "quiz",
       questions: [
         {
           id: 1,
-          question: "¿Qué son los marcadores textuales?",
+          question: "¿Qué son los elementos deícticos?",
           options: [
             "Elementos decorativos del texto",
-            "Unidades lingüísticas que estructuran el texto y guían al lector",
+            "Unidades lingüísticas que obtienen su significado del contexto",
             "Signos de puntuación específicos",
-            "Herramientas exclusivas de la comunicación oral"
+            "Herramientas exclusivas de la comunicación escrita"
           ],
           correctAnswer: 1
         },
         {
           id: 2,
-          question: "¿Cuál de los siguientes NO es un tipo de marcador textual?",
+          question: "¿Cuál de los siguientes NO es un tipo de deíctico?",
           options: [
-            "Marcadores de orden",
-            "Marcadores de conclusión",
-            "Marcadores de decoración",
-            "Marcadores de causa-efecto"
+            "Deícticos personales",
+            "Deícticos espaciales",
+            "Deícticos decorativos",
+            "Deícticos temporales"
           ],
           correctAnswer: 2
         },
         {
           id: 3,
-          question: "¿Qué función principal cumplen los marcadores textuales en un texto?",
+          question: "¿Qué función principal cumplen los deícticos en un texto?",
           options: [
-            "Organizar la información y establecer relaciones lógicas",
+            "Señalar o referirse a elementos del contexto comunicativo",
             "Aumentar la extensión del texto sin aportar contenido",
             "Decorar y embellecer el estilo del autor",
-            "Reemplazar nombres propios por pronombres"
+            "Reemplazar adjetivos por adverbios"
           ],
           correctAnswer: 0
         },
         {
           id: 4,
-          question: "¿Cuál de los siguientes es un ejemplo de marcador de ordenación?",
+          question: "¿Cuál de los siguientes es un ejemplo de deíctico personal?",
           options: [
-            "Finalmente",
-            "Sin embargo",
-            "Por consiguiente",
-            "A pesar de"
-          ],
-          correctAnswer: 0
-        },
-        {
-          id: 5,
-          question: "¿Qué marcador textual se usa para introducir una consecuencia?",
-          options: [
-            "En primer lugar",
-            "Por lo tanto",
-            "Además",
-            "Por otro lado"
-          ],
-          correctAnswer: 1
-        },
-        {
-          id: 6,
-          question: "¿Cuál de los siguientes marcadores se usa para mostrar una adición?",
-          options: [
-            "Además",
-            "Por lo tanto",
-            "Es decir",
-            "Por otro lado"
-          ],
-          correctAnswer: 0
-        },
-        {
-          id: 7,
-          question: "¿Qué marcador textual se utiliza para expresar una conclusión?",
-          options: [
-            "En resumen",
-            "Por otro lado",
-            "Así que",
-            "De hecho"
-          ],
-          correctAnswer: 0
-        },
-        {
-          id: 8,
-          question: "¿Qué marcador de contraste indica una idea opuesta?",
-          options: [
-            "Por otro lado",
-            "A continuación",
-            "En consecuencia",
-            "Sin embargo"
-          ],
-          correctAnswer: 3
-        },
-        {
-          id: 9,
-          question: "¿Qué marcador textual se utiliza para expresar una condición?",
-          options: [
-            "Si",
-            "Por lo tanto",
-            "Por otro lado",
-            "Es decir"
-          ],
-          correctAnswer: 0
-        },
-        {
-          id: 10,
-          question: "¿Qué marcador textual se usa para organizar una enumeración?",
-          options: [
-            "En primer lugar",
-            "De hecho",
-            "Sin embargo",
-            "Por lo tanto"
-          ],
-          correctAnswer: 0
-        },
-        {
-          id: 11,
-          question: "¿Cuál es el marcador que conecta ideas opuestas?",
-          options: [
-            "Por lo tanto",
-            "En resumen",
-            "Sin embargo",
-            "Por otro lado"
+            "Aquí",
+            "Ahora",
+            "Yo",
+            "Esto"
           ],
           correctAnswer: 2
         },
         {
-          id: 12,
-          question: "¿Qué marcador de relación se utiliza para indicar causa y efecto?",
-          options: [
-            "Así que",
-            "Por lo tanto",
-            "De hecho",
-            "Por otro lado"
-          ],
-          correctAnswer: 1
-        },
-        {
-          id: 13,
-          question: "¿Qué marcador se usa para añadir una nueva idea relacionada?",
-          options: [
-            "Por lo tanto",
-            "De hecho",
-            "Además",
-            "Por otro lado"
-          ],
-          correctAnswer: 2
-        },
-        {
-          id: 14,
-          question: "¿Cuál de estos marcadores se usa para reformular una idea?",
-          options: [
-            "En resumen",
-            "Es decir",
-            "Por otro lado",
-            "Así que"
-          ],
-          correctAnswer: 1
-        },
-        {
-          id: 15,
-          question: "¿Qué marcador se usa para indicar una consecuencia directa?",
-          options: [
-            "A continuación",
-            "Por lo tanto",
-            "Es decir",
-            "Sin embargo"
-          ],
-          correctAnswer: 1
-        }
+    id: 5,
+    question: "¿Qué marcador textual se usa para introducir una consecuencia?",
+    options: [
+      "En primer lugar",
+      "Por lo tanto",
+      "Además",
+      "Por otro lado"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 6,
+    question: "¿Cuál de los siguientes marcadores se usa para mostrar una adición?",
+    options: [
+      "Además",
+      "Por lo tanto",
+      "Es decir",
+      "Por otro lado"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 7,
+    question: "¿Qué marcador textual se utiliza para expresar una conclusión?",
+    options: [
+      "En resumen",
+      "Por otro lado",
+      "Así que",
+      "De hecho"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 8,
+    question: "¿Qué marcador de contraste indica una idea opuesta?",
+    options: [
+      "Por otro lado",
+      "A continuación",
+      "En consecuencia",
+      "Sin embargo"
+    ],
+    correctAnswer: 3
+  },
+  {
+    id: 9,
+    question: "¿Qué marcador textual se utiliza para expresar una condición?",
+    options: [
+      "Si",
+      "Por lo tanto",
+      "Por otro lado",
+      "Es decir"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 10,
+    question: "¿Qué marcador textual se usa para organizar una enumeración?",
+    options: [
+      "En primer lugar",
+      "De hecho",
+      "Sin embargo",
+      "Por lo tanto"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 11,
+    question: "¿Cuál es el marcador que conecta ideas opuestas?",
+    options: [
+      "Por lo tanto",
+      "En resumen",
+      "Sin embargo",
+      "Por otro lado"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 12,
+    question: "¿Qué marcador de relación se utiliza para indicar causa y efecto?",
+    options: [
+      "Así que",
+      "Por lo tanto",
+      "De hecho",
+      "Por otro lado"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 13,
+    question: "¿Qué marcador se usa para añadir una nueva idea relacionada?",
+    options: [
+      "Por lo tanto",
+      "De hecho",
+      "Además",
+      "Por otro lado"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 14,
+    question: "¿Cuál de estos marcadores se usa para reformular una idea?",
+    options: [
+      "En resumen",
+      "Es decir",
+      "Por otro lado",
+      "Así que"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 15,
+    question: "¿Qué marcador se usa para indicar una consecuencia directa?",
+    options: [
+      "A continuación",
+      "Por lo tanto",
+      "Es decir",
+      "Sin embargo"
+    ],
+    correctAnswer: 1
+  }
+        // Añadidas preguntas de ejemplo para el quiz
       ],
     },
   ],

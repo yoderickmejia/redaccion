@@ -47,8 +47,8 @@ const Videos: { [key: number]: { videoURL: string } } = {
 // Datos del curso 1
 const courseData = {
   id: 1,
-  title: "Marcadores Textuales",
-  description: "Aprende sobre los diferentes tipos de marcadores textuales.",
+  title: "Estilo Directo e Indirecto",
+  description: "Aprende sobre el uso del estilo directo e indirecto en los textos, especialmente en libros de español.",
   level: "Intermedio",
   totalLessons: 4,
   completedLessons: 0,
@@ -61,198 +61,199 @@ const courseData = {
   lessons: [
     {
       id: 101,
-      title: "Los marcadores textuales",
+      title: "El Estilo Directo",
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video1.mp4",
-      content: "<p>Contenido de la lección sobre marcadores textuales</p>"
+      content: "<p>Contenido de la lección sobre el estilo directo, cómo se utiliza y su importancia en los textos literarios.</p>"
     },
     {
       id: 102,
-      title: "Marcadores textuales y sus tipos",
+      title: "El Estilo Indirecto",
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video2.mp4",
-      content: "<p>Contenido sobre los tipos de marcadores textuales</p>"
+      content: "<p>Contenido sobre el estilo indirecto, sus características y diferencias con el estilo directo.</p>"
     },
     {
       id: 103,
-      title: "Marcadores textuales y sus tipos",
+      title: "Estilo Directo vs. Estilo Indirecto",
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video.mp4",
-      content: "<p>Contenido sobre los tipos de marcadores textuales</p>"
+      content: "<p>Contenido comparativo entre el estilo directo e indirecto, sus usos y cuándo emplearlos correctamente.</p>"
     },
+
     {
       id: 104,
-      title: "Evaluación:  marcadores textuales",
+      title: "Evaluación: Directo vs Indirecto",
       isCompleted: false,
       type: "quiz",
       questions: [
         {
           id: 1,
-          question: "¿Qué son los marcadores textuales?",
+          question: "¿Qué caracteriza al estilo directo?",
           options: [
-            "Elementos decorativos del texto",
-            "Unidades lingüísticas que estructuran el texto y guían al lector",
-            "Signos de puntuación específicos",
-            "Herramientas exclusivas de la comunicación oral"
+            "Se refiere a lo que una persona dice exactamente, sin alteraciones.",
+            "Se utiliza para parafrasear lo dicho por otra persona.",
+            "Requiere la modificación del discurso original.",
+            "Es exclusivo del lenguaje formal."
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: 2,
+          question: "¿Qué diferencia al estilo indirecto del directo?",
+          options: [
+            "El estilo indirecto cita palabras exactas del hablante.",
+            "El estilo indirecto parafrasea lo dicho por una persona.",
+            "El estilo indirecto utiliza comillas.",
+            "El estilo indirecto es más corto y conciso."
           ],
           correctAnswer: 1
         },
         {
-          id: 2,
-          question: "¿Cuál de los siguientes NO es un tipo de marcador textual?",
-          options: [
-            "Marcadores de orden",
-            "Marcadores de conclusión",
-            "Marcadores de decoración",
-            "Marcadores de causa-efecto"
-          ],
-          correctAnswer: 2
-        },
-        {
           id: 3,
-          question: "¿Qué función principal cumplen los marcadores textuales en un texto?",
+          question: "¿Cuál de los siguientes ejemplos corresponde al estilo directo?",
           options: [
-            "Organizar la información y establecer relaciones lógicas",
-            "Aumentar la extensión del texto sin aportar contenido",
-            "Decorar y embellecer el estilo del autor",
-            "Reemplazar nombres propios por pronombres"
+            "\"Voy a la tienda\", dijo Juan.",
+            "Juan mencionó que iba a la tienda.",
+            "Según Juan, él va a la tienda.",
+            "Juan dijo que va a la tienda."
           ],
           correctAnswer: 0
         },
         {
           id: 4,
-          question: "¿Cuál de los siguientes es un ejemplo de marcador de ordenación?",
+          question: "¿Cuál de estos es un ejemplo de estilo indirecto?",
           options: [
-            "Finalmente",
-            "Sin embargo",
-            "Por consiguiente",
-            "A pesar de"
+            "\"No quiero ir al cine\", expresó Marta.",
+            "Marta mencionó que no quería ir al cine.",
+            "Marta dijo que no quería ir al cine.",
+            "Marta exclamó: 'No quiero ir al cine'."
           ],
-          correctAnswer: 0
+          correctAnswer: 1
         },
         {
           id: 5,
-          question: "¿Qué marcador textual se usa para introducir una consecuencia?",
+          question: "¿Qué sucede en la transformación del estilo directo al indirecto?",
           options: [
-            "En primer lugar",
-            "Por lo tanto",
-            "Además",
-            "Por otro lado"
+            "Las palabras exactas se mantienen igual.",
+            "Se eliminan los verbos de decir y se usan otros.",
+            "El orden de las palabras se mantiene igual.",
+            "El discurso no cambia de forma."
           ],
           correctAnswer: 1
         },
         {
           id: 6,
-          question: "¿Cuál de los siguientes marcadores se usa para mostrar una adición?",
+          question: "¿Qué tipo de verbo es común en el estilo indirecto?",
           options: [
-            "Además",
-            "Por lo tanto",
-            "Es decir",
-            "Por otro lado"
-          ],
-          correctAnswer: 0
-        },
-        {
-          id: 7,
-          question: "¿Qué marcador textual se utiliza para expresar una conclusión?",
-          options: [
-            "En resumen",
-            "Por otro lado",
-            "Así que",
-            "De hecho"
-          ],
-          correctAnswer: 0
-        },
-        {
-          id: 8,
-          question: "¿Qué marcador de contraste indica una idea opuesta?",
-          options: [
-            "Por otro lado",
-            "A continuación",
-            "En consecuencia",
-            "Sin embargo"
+            "Verbo en presente de indicativo.",
+            "Verbo en futuro de indicativo.",
+            "Verbo en modo subjuntivo.",
+            "Verbo en forma de 'decir' o 'comentar'."
           ],
           correctAnswer: 3
         },
         {
-          id: 9,
-          question: "¿Qué marcador textual se utiliza para expresar una condición?",
+          id: 7,
+          question: "¿Cómo cambia la puntuación en el estilo indirecto?",
           options: [
-            "Si",
-            "Por lo tanto",
-            "Por otro lado",
-            "Es decir"
+            "Se usan comillas.",
+            "No se usa comillas, solo se cambia el orden del discurso.",
+            "Se colocan dos puntos.",
+            "La puntuación no cambia."
           ],
-          correctAnswer: 0
+          correctAnswer: 1
+        },
+        {
+          id: 8,
+          question: "¿Cuál de los siguientes ejemplos usa correctamente el estilo indirecto?",
+          options: [
+            "Carlos preguntó, \"¿Vendrás mañana?\"",
+            "Carlos preguntó si vendrías mañana.",
+            "Carlos dijo: '¿Vendrás mañana?'",
+            "Carlos preguntó, '¿Vendrás mañana?'"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 9,
+          question: "¿En qué tipo de textos es más común el uso del estilo indirecto?",
+          options: [
+            "En textos narrativos y literarios.",
+            "En las noticias y artículos de opinión.",
+            "En textos científicos y académicos.",
+            "En textos informales como mensajes de texto."
+          ],
+          correctAnswer: 2
         },
         {
           id: 10,
-          question: "¿Qué marcador textual se usa para organizar una enumeración?",
+          question: "¿Qué tipo de cambio de tiempo verbal es necesario en el estilo indirecto?",
           options: [
-            "En primer lugar",
-            "De hecho",
-            "Sin embargo",
-            "Por lo tanto"
+            "De presente a pasado.",
+            "De futuro a presente.",
+            "De futuro a pasado.",
+            "No es necesario cambiar el tiempo verbal."
           ],
           correctAnswer: 0
         },
         {
           id: 11,
-          question: "¿Cuál es el marcador que conecta ideas opuestas?",
+          question: "¿Qué marcador se usa comúnmente para introducir una cita en estilo indirecto?",
           options: [
-            "Por lo tanto",
-            "En resumen",
-            "Sin embargo",
-            "Por otro lado"
-          ],
-          correctAnswer: 2
-        },
-        {
-          id: 12,
-          question: "¿Qué marcador de relación se utiliza para indicar causa y efecto?",
-          options: [
-            "Así que",
-            "Por lo tanto",
-            "De hecho",
-            "Por otro lado"
+            "Comillas.",
+            "Dos puntos.",
+            "Coma.",
+            "Paréntesis."
           ],
           correctAnswer: 1
         },
         {
-          id: 13,
-          question: "¿Qué marcador se usa para añadir una nueva idea relacionada?",
+          id: 12,
+          question: "¿Cuál es la principal diferencia en el uso de comillas entre el estilo directo e indirecto?",
           options: [
-            "Por lo tanto",
-            "De hecho",
-            "Además",
-            "Por otro lado"
+            "Las comillas se usan solo en el estilo directo.",
+            "Las comillas se usan solo en el estilo indirecto.",
+            "Las comillas se usan en ambos estilos, pero en el indirecto siempre se usan al principio.",
+            "Las comillas son opcionales en ambos estilos."
           ],
-          correctAnswer: 2
+          correctAnswer: 0
+        },
+        {
+          id: 13,
+          question: "¿Qué ocurre con los pronombres al cambiar del estilo directo al indirecto?",
+          options: [
+            "No cambian.",
+            "Se cambian según la perspectiva del narrador.",
+            "Se añaden los pronombres en el indirecto.",
+            "Se eliminan los pronombres."
+          ],
+          correctAnswer: 1
         },
         {
           id: 14,
-          question: "¿Cuál de estos marcadores se usa para reformular una idea?",
+          question: "¿Cuál de las siguientes es una característica del estilo indirecto?",
           options: [
-            "En resumen",
-            "Es decir",
-            "Por otro lado",
-            "Así que"
+            "El narrador dice lo que otra persona ha dicho exactamente.",
+            "Se presentan los pensamientos o palabras de otra persona de forma resumida o modificada.",
+            "Utiliza signos de exclamación y comillas.",
+            "Se mantiene el tono emocional y directo de las palabras originales."
           ],
           correctAnswer: 1
         },
         {
           id: 15,
-          question: "¿Qué marcador se usa para indicar una consecuencia directa?",
+          question: "¿Qué palabra se utiliza comúnmente para introducir una cita indirecta?",
           options: [
-            "A continuación",
-            "Por lo tanto",
-            "Es decir",
-            "Sin embargo"
+            "Dijo",
+            "Comentó",
+            "Mencionó",
+            "Exclamó"
           ],
-          correctAnswer: 1
+          correctAnswer: 2
         }
       ],
     },

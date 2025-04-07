@@ -47,8 +47,8 @@ const Videos: { [key: number]: { videoURL: string } } = {
 // Datos del curso 1
 const courseData = {
   id: 1,
-  title: "Marcadores Textuales",
-  description: "Aprende sobre los diferentes tipos de marcadores textuales.",
+  title: "Las Relaciones Fóricas",
+  description: "Aprende sobre los diferentes tipos de relaciones fóricas.",
   level: "Intermedio",
   totalLessons: 4,
   completedLessons: 0,
@@ -61,77 +61,78 @@ const courseData = {
   lessons: [
     {
       id: 101,
-      title: "Los marcadores textuales",
+      title: "Las Relaciones Fóricas",
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video1.mp4",
-      content: "<p>Contenido de la lección sobre marcadores textuales</p>"
+      content: "<p>Contenido de la lección sobre elementos de las relaciones fóricas</p>"
     },
     {
       id: 102,
-      title: "Marcadores textuales y sus tipos",
+      title: "Las relaciones fóricas y sus tipos",
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video2.mp4",
-      content: "<p>Contenido sobre los tipos de marcadores textuales</p>"
+      content: "<p>Contenido sobre los tipos de relaciones fóricas</p>"
     },
     {
       id: 103,
-      title: "Marcadores textuales y sus tipos",
+      title: "Las relaciones fóricas y sus usos",
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video.mp4",
-      content: "<p>Contenido sobre los tipos de marcadores textuales</p>"
+      content: "<p>Contenido sobre los usos de las relaciones fóricas</p>"
     },
+  
     {
       id: 104,
-      title: "Evaluación:  marcadores textuales",
+      title: "Evaluación: Las relaciones fóricas",
       isCompleted: false,
       type: "quiz",
       questions: [
         {
           id: 1,
-          question: "¿Qué son los marcadores textuales?",
+          question: "¿Qué son las relaciones fóricas?",
           options: [
             "Elementos decorativos del texto",
-            "Unidades lingüísticas que estructuran el texto y guían al lector",
+            "Unidades lingüísticas que establecen una referencia dentro del texto",
             "Signos de puntuación específicos",
-            "Herramientas exclusivas de la comunicación oral"
+            "Herramientas exclusivas de la comunicación escrita"
           ],
           correctAnswer: 1
         },
         {
           id: 2,
-          question: "¿Cuál de los siguientes NO es un tipo de marcador textual?",
+          question: "¿Cuál de los siguientes NO es un tipo de relación fórica?",
           options: [
-            "Marcadores de orden",
-            "Marcadores de conclusión",
-            "Marcadores de decoración",
-            "Marcadores de causa-efecto"
+            "Anáfora",
+            "Catáfora",
+            "Deícticos",
+            "Hiperbatón"
           ],
-          correctAnswer: 2
+          correctAnswer: 3
         },
         {
           id: 3,
-          question: "¿Qué función principal cumplen los marcadores textuales en un texto?",
+          question: "¿Qué función principal cumplen las relaciones fóricas en un texto?",
           options: [
-            "Organizar la información y establecer relaciones lógicas",
+            "Establecer una referencia entre elementos del texto o entre el texto y el contexto",
             "Aumentar la extensión del texto sin aportar contenido",
             "Decorar y embellecer el estilo del autor",
-            "Reemplazar nombres propios por pronombres"
+            "Reemplazar adjetivos por adverbios"
           ],
           correctAnswer: 0
         },
         {
           id: 4,
-          question: "¿Cuál de los siguientes es un ejemplo de marcador de ordenación?",
+          question: "¿Cuál de los siguientes es un ejemplo de anáfora?",
           options: [
-            "Finalmente",
-            "Sin embargo",
-            "Por consiguiente",
-            "A pesar de"
+            "Este libro es interesante.",
+            "Lo vi ayer en la tienda.",
+            "Ella dijo que vendría.",
+            "Esto es lo que siempre sucede."
           ],
-          correctAnswer: 0
+          correctAnswer: 1
         },
         {
           id: 5,
@@ -258,7 +259,6 @@ const courseData = {
     },
   ],
 }
-
 function CourseDetailPage() {
   const router = useRouter()
   const { theme, setTheme } = useTheme()

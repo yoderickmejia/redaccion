@@ -40,41 +40,34 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ videoURL }) => {
   return (
     <div className="relative aspect-video bg-black rounded-lg overflow-hidden mb-6">
       {/* Elemento video con ajustes de adaptación */}
-      <video
-        ref={videoRef}
-        autoPlay
-        playsInline
-        muted={isMuted}
-        className="w-full h-full object-cover"  // Asegura que el video ocupe todo el contenedor y se adapte
-        onTimeUpdate={handleTimeUpdate} // Evento que actualiza el progreso
-      >
-        <source src={videoURL} type="video/mp4" />
-      </video>
+      {/* <iframe
+        className="w-full h-full"
+        src={videoURL}
+
+
+        title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe> */}
+
+      {/* Removed duplicate iframe */}
+      
+      <iframe
+        className="w-full h-full"
+        src={videoURL}
+        title="YouTube video player" 
+        frameBorder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerPolicy="strict-origin-when-cross-origin"  
+        allowFullScreen
+      ></iframe>
 
       {/* Controles personalizados */}
-      <div className="absolute inset-0 flex flex-col justify-between p-4 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity">
-        <div className="flex justify-between">
-          <button onClick={togglePlayPause} className="text-white">
-            {isPlaying ? 'Pause' : 'Play'}
-          </button>
-          <button onClick={toggleMute} className="text-white">
-            {isMuted ? 'Unmute' : 'Mute'}
-          </button>
-        </div>
+    
 
-        <div className="mt-2">
-          <div className="w-full mb-2">
-            {/* Barra de progreso */}
-            <progress value={videoProgress} max={100} className="w-full h-1" />
-          </div>
-
-          <div className="flex justify-between items-center text-white text-sm">
-            <span>{videoProgress.toFixed(0)}%</span>
-            <span>{Math.floor((videoProgress / 100) * (videoRef.current?.duration || 0))} / {Math.floor(videoRef.current?.duration || 0)} sec</span>
-          </div>
-        </div>
-      </div>
-    </div>
+        
+  </div>
   );
 };
 

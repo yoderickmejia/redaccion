@@ -47,8 +47,8 @@ const Videos: { [key: number]: { videoURL: string } } = {
 // Datos del curso 1
 const courseData = {
   id: 1,
-  title: "Marcadores Textuales",
-  description: "Aprende sobre los diferentes tipos de marcadores textuales.",
+  title: "Citas Bibliográficas",
+  description: "Aprende sobre los diferentes tipos de citas bibliográficas y cómo usarlas correctamente.",
   level: "Intermedio",
   totalLessons: 4,
   completedLessons: 0,
@@ -61,198 +61,199 @@ const courseData = {
   lessons: [
     {
       id: 101,
-      title: "Los marcadores textuales",
+      title: "las Citas Bibliográficas",
       isCompleted: false,
       type: "video",
-      VideoURL: "/videos/video1.mp4",
-      content: "<p>Contenido de la lección sobre marcadores textuales</p>"
+      VideoURL: "/videos/citas.mp4",
+      content: "<p>Contenido de la lección sobre la importancia de las citas bibliográficas y cómo se utilizan en el trabajo académico.</p>"
     },
     {
       id: 102,
-      title: "Marcadores textuales y sus tipos",
+      title: "Los Tipos de Citas Bibliográficas",
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video2.mp4",
-      content: "<p>Contenido sobre los tipos de marcadores textuales</p>"
+      content: "<p>Contenido sobre los diferentes tipos de citas: directas, indirectas, y de cita textual.</p>"
     },
     {
       id: 103,
-      title: "Marcadores textuales y sus tipos",
+      title: "Normas de Citas Bibliográficas",
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video.mp4",
-      content: "<p>Contenido sobre los tipos de marcadores textuales</p>"
+      content: "<p>Contenido sobre las normas más utilizadas para citar fuentes, como APA, MLA y Chicago.</p>"
     },
+  
     {
       id: 104,
-      title: "Evaluación:  marcadores textuales",
+      title: "Evaluación: Citas Bibliográficas",
       isCompleted: false,
       type: "quiz",
       questions: [
         {
           id: 1,
-          question: "¿Qué son los marcadores textuales?",
+          question: "¿Qué es una cita bibliográfica?",
           options: [
-            "Elementos decorativos del texto",
-            "Unidades lingüísticas que estructuran el texto y guían al lector",
-            "Signos de puntuación específicos",
-            "Herramientas exclusivas de la comunicación oral"
+            "Un resumen del libro utilizado en el trabajo",
+            "Una referencia a una fuente de información utilizada en el texto",
+            "Una paráfrasis del autor",
+            "Una copia exacta de un texto sin citar"
           ],
           correctAnswer: 1
         },
         {
           id: 2,
-          question: "¿Cuál de los siguientes NO es un tipo de marcador textual?",
+          question: "¿Cuál de las siguientes NO es una norma de citas bibliográficas?",
           options: [
-            "Marcadores de orden",
-            "Marcadores de conclusión",
-            "Marcadores de decoración",
-            "Marcadores de causa-efecto"
-          ],
-          correctAnswer: 2
-        },
-        {
-          id: 3,
-          question: "¿Qué función principal cumplen los marcadores textuales en un texto?",
-          options: [
-            "Organizar la información y establecer relaciones lógicas",
-            "Aumentar la extensión del texto sin aportar contenido",
-            "Decorar y embellecer el estilo del autor",
-            "Reemplazar nombres propios por pronombres"
-          ],
-          correctAnswer: 0
-        },
-        {
-          id: 4,
-          question: "¿Cuál de los siguientes es un ejemplo de marcador de ordenación?",
-          options: [
-            "Finalmente",
-            "Sin embargo",
-            "Por consiguiente",
-            "A pesar de"
-          ],
-          correctAnswer: 0
-        },
-        {
-          id: 5,
-          question: "¿Qué marcador textual se usa para introducir una consecuencia?",
-          options: [
-            "En primer lugar",
-            "Por lo tanto",
-            "Además",
-            "Por otro lado"
-          ],
-          correctAnswer: 1
-        },
-        {
-          id: 6,
-          question: "¿Cuál de los siguientes marcadores se usa para mostrar una adición?",
-          options: [
-            "Además",
-            "Por lo tanto",
-            "Es decir",
-            "Por otro lado"
-          ],
-          correctAnswer: 0
-        },
-        {
-          id: 7,
-          question: "¿Qué marcador textual se utiliza para expresar una conclusión?",
-          options: [
-            "En resumen",
-            "Por otro lado",
-            "Así que",
-            "De hecho"
-          ],
-          correctAnswer: 0
-        },
-        {
-          id: 8,
-          question: "¿Qué marcador de contraste indica una idea opuesta?",
-          options: [
-            "Por otro lado",
-            "A continuación",
-            "En consecuencia",
-            "Sin embargo"
+            "Norma APA",
+            "Norma MLA",
+            "Norma Chicago",
+            "Norma Harvard"
           ],
           correctAnswer: 3
         },
         {
-          id: 9,
-          question: "¿Qué marcador textual se utiliza para expresar una condición?",
+          id: 3,
+          question: "¿Cuál es la principal función de una cita bibliográfica?",
           options: [
-            "Si",
-            "Por lo tanto",
-            "Por otro lado",
-            "Es decir"
+            "Mostrar que has leído el libro",
+            "Dar crédito a los autores cuyas ideas has utilizado",
+            "Hacer más largo el texto",
+            "Demostrar el dominio del tema"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 4,
+          question: "¿Cómo se cita un libro en el estilo APA?",
+          options: [
+            "Autor, Año, Título, Ciudad",
+            "Autor, Título, Año",
+            "Apellido, Iniciales del autor. (Año). Título del libro. Ciudad: Editorial.",
+            "Título del libro (Autor, Año)"
+          ],
+          correctAnswer: 2
+        },
+        {
+          id: 5,
+          question: "¿Qué tipo de cita se utiliza para reproducir las palabras exactas de un autor?",
+          options: [
+            "Cita directa",
+            "Cita indirecta",
+            "Paráfrasis",
+            "Referencia"
           ],
           correctAnswer: 0
         },
         {
-          id: 10,
-          question: "¿Qué marcador textual se usa para organizar una enumeración?",
+          id: 6,
+          question: "¿Cómo se hace una cita indirecta según el estilo MLA?",
           options: [
-            "En primer lugar",
-            "De hecho",
-            "Sin embargo",
-            "Por lo tanto"
+            "Autor, Año. Título.",
+            "Citar el autor original con el año",
+            "Autor, Título. Cita indirecta",
+            "Cita textual con la página"
+          ],
+          correctAnswer: 2
+        },
+        {
+          id: 7,
+          question: "¿Qué es una cita bibliográfica de tipo APA?",
+          options: [
+            "Citar sólo la fuente primaria",
+            "Incluir todos los autores del libro o artículo",
+            "Referencia completa con autor, título, año y editorial",
+            "Usar números de páginas sin importar el formato"
+          ],
+          correctAnswer: 2
+        },
+        {
+          id: 8,
+          question: "¿Qué marcador de cita es adecuado para referirse a una idea o autor previamente mencionado?",
+          options: [
+            "Et al.",
+            "Ibid.",
+            "ibid.",
+            "De hecho"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 9,
+          question: "¿Qué tipo de cita se utiliza para una fuente secundaria en el estilo APA?",
+          options: [
+            "Cita directa",
+            "Cita indirecta",
+            "Referencia",
+            "Nota al pie"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 10,
+          question: "¿Qué es lo que NO se debe hacer en una cita bibliográfica?",
+          options: [
+            "No citar fuentes relevantes",
+            "Copiar la cita de un artículo sin indicarlo",
+            "No agregar el nombre del autor",
+            "Incluir la información completa sobre la fuente"
           ],
           correctAnswer: 0
         },
         {
           id: 11,
-          question: "¿Cuál es el marcador que conecta ideas opuestas?",
+          question: "¿Cuál es la estructura básica de una cita bibliográfica en formato Chicago?",
           options: [
-            "Por lo tanto",
-            "En resumen",
-            "Sin embargo",
-            "Por otro lado"
+            "Autor, Título, Editorial, Año",
+            "Apellido, Nombre. Título del libro. Ciudad: Editorial, Año.",
+            "Autor, Año, Título, Ciudad, Editorial",
+            "Apellido, Autor. Año de publicación"
           ],
-          correctAnswer: 2
+          correctAnswer: 1
         },
         {
           id: 12,
-          question: "¿Qué marcador de relación se utiliza para indicar causa y efecto?",
+          question: "¿Cuál de las siguientes afirmaciones es verdadera sobre las citas en el estilo MLA?",
           options: [
-            "Así que",
-            "Por lo tanto",
-            "De hecho",
-            "Por otro lado"
+            "La cita se coloca entre paréntesis al final de la frase",
+            "No es necesario incluir la fuente del autor",
+            "El formato MLA no requiere página de la cita",
+            "Se usan corchetes para las citas de libros"
           ],
-          correctAnswer: 1
+          correctAnswer: 0
         },
         {
           id: 13,
-          question: "¿Qué marcador se usa para añadir una nueva idea relacionada?",
+          question: "¿Cómo se cita un artículo de una revista en APA?",
           options: [
-            "Por lo tanto",
-            "De hecho",
-            "Además",
-            "Por otro lado"
+            "Autor, Año. Título. Nombre de la revista, volumen(páginas).",
+            "Apellido, Iniciales del autor. (Año). Título del artículo. Nombre de la revista, volumen, páginas.",
+            "Autor, Título. Año. Revista, volumen, número.",
+            "Autor. (Año). Artículo en línea. Nombre de la revista"
           ],
-          correctAnswer: 2
+          correctAnswer: 1
         },
         {
           id: 14,
-          question: "¿Cuál de estos marcadores se usa para reformular una idea?",
+          question: "¿Cuál de estas citas es correcta en el estilo MLA?",
           options: [
-            "En resumen",
-            "Es decir",
-            "Por otro lado",
-            "Así que"
+            "Smith, John. 'Citas y Referencias.' Editorial ABC, 2015.",
+            "Smith, J. Citas y Referencias, 2015.",
+            "Smith, John. Citas y Referencias. Editorial ABC, 2015.",
+            "Citas de Smith, John. 'Citas y Referencias.' 2015."
           ],
-          correctAnswer: 1
+          correctAnswer: 0
         },
         {
           id: 15,
-          question: "¿Qué marcador se usa para indicar una consecuencia directa?",
+          question: "¿Qué tipo de cita se usa cuando no se incluye la página exacta de la fuente?",
           options: [
-            "A continuación",
-            "Por lo tanto",
-            "Es decir",
-            "Sin embargo"
+            "Cita indirecta",
+            "Cita directa",
+            "Cita sin página",
+            "Paráfrasis"
           ],
-          correctAnswer: 1
+          correctAnswer: 2
         }
       ],
     },

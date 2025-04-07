@@ -38,225 +38,148 @@ import jsPDF from "jspdf"
 
 // Constante que mapea el id de la lección a su URL de video
 const Videos: { [key: number]: { videoURL: string } } = {
-  101: { videoURL: "/videos/video1.mp4" },
-  102: { videoURL: "/videos/video2.mp4" },
-  103: { videoURL: "/videos/video3.mp4" },
-  // Para la lección 104 (quiz) no se necesita URL de video
+  201: { videoURL: "https://www.youtube.com/embed/FTBmSjL7AhI?si=t_gQrfqdtmiKKlj7" },
+  202: { videoURL: "https://www.youtube.com/embed/FTBmSjL7AhI?si=t_gQrfqdtmiKKlj7" }, 
+  203: { videoURL: "https://www.youtube.com/embed/FTBmSjL7AhI?si=t_gQrfqdtmiKKlj7" },
+  // Para la lección 204 (quiz) no se necesita URL de video
 }
 
 // Datos del curso 1
 const courseData = {
   id: 1,
-  title: "Marcadores Textuales",
-  description: "Aprende sobre los diferentes tipos de marcadores textuales.",
+  title: "Figuras Literarias: Dicción, Pensamiento y Tropos",
+  description: "Explora las principales figuras literarias de dicción, pensamiento y los tropos en la lengua española.",
   level: "Intermedio",
   totalLessons: 4,
   completedLessons: 0,
   progress: 0,
-  duration: "30 minutos",
+  duration: "35 minutos",
   lastAccessed: "",
-  rating: 4.9,
-  reviews: 840,
+  rating: 4.8,
+  reviews: 950,
 
   lessons: [
     {
-      id: 101,
-      title: "Los marcadores textuales",
+      id: 201,
+      title: "¿Qué son las figuras literarias?",
       isCompleted: false,
       type: "video",
-      VideoURL: "/videos/video1.mp4",
-      content: "<p>Contenido de la lección sobre marcadores textuales</p>"
+      VideoURL: "/videos/figuras-literarias-1.mp4",
+      content: "<p>En esta lección aprenderás qué son las figuras literarias, su función en el lenguaje y su clasificación general.</p>"
     },
     {
-      id: 102,
-      title: "Marcadores textuales y sus tipos",
+      id: 202,
+      title: "Figuras de dicción y pensamiento",
       isCompleted: false,
       type: "video",
-      VideoURL: "/videos/video2.mp4",
-      content: "<p>Contenido sobre los tipos de marcadores textuales</p>"
+      VideoURL: "/videos/figuras-literarias-2.mp4",
+      content: "<p>Analizaremos figuras como la aliteración, anáfora, elipsis, así como la antítesis, paradoja, y otras figuras del pensamiento.</p>"
     },
     {
-      id: 103,
-      title: "Marcadores textuales y sus tipos",
+      id: 203,
+      title: "Los tropos",
       isCompleted: false,
       type: "video",
-      VideoURL: "/videos/video.mp4",
-      content: "<p>Contenido sobre los tipos de marcadores textuales</p>"
+      VideoURL: "/videos/figuras-literarias-3.mp4",
+      content: "<p>Descubre qué son los tropos y cómo se usan: metáfora, metonimia, sinécdoque, ironía, entre otros.</p>"
     },
     {
-      id: 104,
-      title: "Evaluación:  marcadores textuales",
+      id: 204,
+      title: "Evaluación: Figuras literarias",
       isCompleted: false,
       type: "quiz",
       questions: [
         {
           id: 1,
-          question: "¿Qué son los marcadores textuales?",
+          question: "¿Qué son las figuras literarias?",
           options: [
-            "Elementos decorativos del texto",
-            "Unidades lingüísticas que estructuran el texto y guían al lector",
-            "Signos de puntuación específicos",
-            "Herramientas exclusivas de la comunicación oral"
+            "Normas ortográficas del español",
+            "Recursos expresivos que embellecen el lenguaje",
+            "Tipos de conjugación verbal",
+            "Estructuras sintácticas básicas"
           ],
           correctAnswer: 1
         },
         {
           id: 2,
-          question: "¿Cuál de los siguientes NO es un tipo de marcador textual?",
+          question: "¿Cuál de estas es una figura de dicción?",
           options: [
-            "Marcadores de orden",
-            "Marcadores de conclusión",
-            "Marcadores de decoración",
-            "Marcadores de causa-efecto"
+            "Metáfora",
+            "Ironía",
+            "Anáfora",
+            "Paradoja"
           ],
           correctAnswer: 2
         },
         {
           id: 3,
-          question: "¿Qué función principal cumplen los marcadores textuales en un texto?",
+          question: "¿Cuál de las siguientes es una figura del pensamiento?",
           options: [
-            "Organizar la información y establecer relaciones lógicas",
-            "Aumentar la extensión del texto sin aportar contenido",
-            "Decorar y embellecer el estilo del autor",
-            "Reemplazar nombres propios por pronombres"
+            "Sinécdoque",
+            "Hipérbaton",
+            "Paradoja",
+            "Metonimia"
           ],
-          correctAnswer: 0
+          correctAnswer: 2
         },
         {
           id: 4,
-          question: "¿Cuál de los siguientes es un ejemplo de marcador de ordenación?",
+          question: "¿Qué es un tropo?",
           options: [
-            "Finalmente",
-            "Sin embargo",
-            "Por consiguiente",
-            "A pesar de"
+            "Una figura que altera el orden sintáctico",
+            "Una forma de repetición",
+            "Un cambio de significado habitual de las palabras",
+            "Un recurso exclusivamente oral"
+          ],
+          correctAnswer: 2
+        },
+        {
+          id: 5,
+          question: "¿Cuál de los siguientes es un ejemplo de metáfora?",
+          options: [
+            "Tus ojos son dos luceros",
+            "Llueve a cántaros",
+            "Temprano madrugó la madrugada",
+            "Vino, vio, venció"
           ],
           correctAnswer: 0
         },
         {
-          id: 5,
-          question: "¿Qué marcador textual se usa para introducir una consecuencia?",
-          options: [
-            "En primer lugar",
-            "Por lo tanto",
-            "Además",
-            "Por otro lado"
-          ],
-          correctAnswer: 1
-        },
-        {
           id: 6,
-          question: "¿Cuál de los siguientes marcadores se usa para mostrar una adición?",
+          question: "¿Qué figura usa la repetición de sonidos similares?",
           options: [
-            "Además",
-            "Por lo tanto",
-            "Es decir",
-            "Por otro lado"
+            "Aliteración",
+            "Hipérbole",
+            "Metonimia",
+            "Elipsis"
           ],
           correctAnswer: 0
         },
         {
           id: 7,
-          question: "¿Qué marcador textual se utiliza para expresar una conclusión?",
+          question: "¿Cuál de estas es una figura de pensamiento?",
           options: [
-            "En resumen",
-            "Por otro lado",
-            "Así que",
-            "De hecho"
+            "Ironía",
+            "Anáfora",
+            "Aliteración",
+            "Hipérbaton"
           ],
           correctAnswer: 0
         },
         {
           id: 8,
-          question: "¿Qué marcador de contraste indica una idea opuesta?",
+          question: "¿Qué figura omite elementos que se sobreentienden?",
           options: [
-            "Por otro lado",
-            "A continuación",
-            "En consecuencia",
-            "Sin embargo"
-          ],
-          correctAnswer: 3
-        },
-        {
-          id: 9,
-          question: "¿Qué marcador textual se utiliza para expresar una condición?",
-          options: [
-            "Si",
-            "Por lo tanto",
-            "Por otro lado",
-            "Es decir"
+            "Elipsis",
+            "Metáfora",
+            "Sinécdoque",
+            "Paradoja"
           ],
           correctAnswer: 0
-        },
-        {
-          id: 10,
-          question: "¿Qué marcador textual se usa para organizar una enumeración?",
-          options: [
-            "En primer lugar",
-            "De hecho",
-            "Sin embargo",
-            "Por lo tanto"
-          ],
-          correctAnswer: 0
-        },
-        {
-          id: 11,
-          question: "¿Cuál es el marcador que conecta ideas opuestas?",
-          options: [
-            "Por lo tanto",
-            "En resumen",
-            "Sin embargo",
-            "Por otro lado"
-          ],
-          correctAnswer: 2
-        },
-        {
-          id: 12,
-          question: "¿Qué marcador de relación se utiliza para indicar causa y efecto?",
-          options: [
-            "Así que",
-            "Por lo tanto",
-            "De hecho",
-            "Por otro lado"
-          ],
-          correctAnswer: 1
-        },
-        {
-          id: 13,
-          question: "¿Qué marcador se usa para añadir una nueva idea relacionada?",
-          options: [
-            "Por lo tanto",
-            "De hecho",
-            "Además",
-            "Por otro lado"
-          ],
-          correctAnswer: 2
-        },
-        {
-          id: 14,
-          question: "¿Cuál de estos marcadores se usa para reformular una idea?",
-          options: [
-            "En resumen",
-            "Es decir",
-            "Por otro lado",
-            "Así que"
-          ],
-          correctAnswer: 1
-        },
-        {
-          id: 15,
-          question: "¿Qué marcador se usa para indicar una consecuencia directa?",
-          options: [
-            "A continuación",
-            "Por lo tanto",
-            "Es decir",
-            "Sin embargo"
-          ],
-          correctAnswer: 1
         }
-      ],
-    },
-  ],
+      ]
+    }
+  ]
 }
 
 function CourseDetailPage() {
