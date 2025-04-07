@@ -333,7 +333,7 @@ function CourseDetailPage() {
           },
           body: JSON.stringify({
             userId: userid,
-            courseNumber: 1,
+            courseNumber: 2,
             courseData: updatedProgress, // Use the updated progress variable
           }),
         });

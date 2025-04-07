@@ -54,7 +54,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ videoURL }) => {
       {/* Removed duplicate iframe */}
       
       <iframe
-        className="w-full h-full"
+        className="w-full h-full absolute inset-0 object-cover"
         src={videoURL}
         title="YouTube video player" 
         frameBorder="0" 
