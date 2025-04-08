@@ -38,9 +38,9 @@ import jsPDF from "jspdf"
 
 // Constante que mapea el id de la lección a su URL de video
 const Videos: { [key: number]: { videoURL: string } } = {
-  101: { videoURL: "/videos/video1.mp4" },
-  102: { videoURL: "https://www.youtube.com/embed/GZeRA36z6n4?si=w5-6d0l-vqabKnTc" },
-  103: { videoURL: "/videos/video3.mp4" },
+  101: { videoURL: "https://www.youtube.com/embed/Om18zmHSYm0?si=fQa1fzo9UNVZXU_B4" },
+  102: { videoURL: "https://www.youtube.com/embed/RgXQhduzDxI?si=J77tFZOqz9odkOyj" },
+  103: { videoURL: "https://www.youtube.com/embed/z7j8TNjq-Zw?si=cKnCBfnPvNzV3gzx" },
   // Para la lección 104 (quiz) no se necesita URL de video
 }
 

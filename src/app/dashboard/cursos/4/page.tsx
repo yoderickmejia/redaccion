@@ -38,9 +38,9 @@ import jsPDF from "jspdf"
 
 // Constante que mapea el id de la lección a su URL de video
 const Videos: { [key: number]: { videoURL: string } } = {
-  101: { videoURL: "/videos/video1.mp4" },
-  102: { videoURL: "/videos/video2.mp4" },
-  103: { videoURL: "/videos/video3.mp4" },
+  101: { videoURL: "https://www.youtube.com/embed/mIpW9fy6BfQ?si=2IyN3iAW_thU0NYC" },
+  102: { videoURL: "https://www.youtube.com/embed/XdRif0a8QI0?si=W9mXuA0Ji-yaUh1a" },
+  103: { videoURL: "https://www.youtube.com/embed/dr3sfNJQgmc?si=fStUGMyfsOYfikZP" },
   // Para la lección 104 (quiz) no se necesita URL de video
 }
 
@@ -354,7 +354,7 @@ function CourseDetailPage() {
   useEffect(() => {
     const fetchCourseData = async () => {
       const userId = localStorage.getItem("userId");
-      const courseNumber = 1;
+      const courseNumber = 4;
       
       if (!userId) {
         console.error("No se encontró userId en localStorage");

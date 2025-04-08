@@ -38,17 +38,17 @@ import jsPDF from "jspdf"
 
 // Constante que mapea el id de la lección a su URL de video
 const Videos: { [key: number]: { videoURL: string } } = {
-  201: { videoURL: "https://www.youtube.com/embed/FTBmSjL7AhI?si=t_gQrfqdtmiKKlj7" },
-  202: { videoURL: "https://www.youtube.com/embed/FTBmSjL7AhI?si=t_gQrfqdtmiKKlj7" }, 
-  203: { videoURL: "https://www.youtube.com/embed/FTBmSjL7AhI?si=t_gQrfqdtmiKKlj7" },
+  201: { videoURL: "https://www.youtube.com/embed/CVmsS8jby9c?si=G0jYsUA9rsOkpA0e" },
+  202: { videoURL: "https://www.youtube.com/embed/xeVfyy9UP5E?si=oVCwMPRaMVOWltjk" }, 
+  203: { videoURL: "https://www.youtube.com/embed/qXnjd3DiZJY?si=d0Lr0n8KIZCIFkI9" },
   // Para la lección 204 (quiz) no se necesita URL de video
 }
 
 // Datos del curso 1
 const courseData = {
   id: 1,
-  title: "Figuras Literarias: Dicción, Pensamiento y Tropos",
-  description: "Explora las principales figuras literarias de dicción, pensamiento y los tropos en la lengua española.",
+  title: "Figuras literarias: Dicción, pensamiento y tropos",
+  description: "Las figuras literarias explicadas con ejemplos.",
   level: "Intermedio",
   totalLessons: 4,
   completedLessons: 0,
@@ -65,7 +65,7 @@ const courseData = {
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/figuras-literarias-1.mp4",
-      content: "<p>En esta lección aprenderás qué son las figuras literarias, su función en el lenguaje y su clasificación general.</p>"
+      content: "<p>Las figuras literarias explicadas con ejemplos.</p>"
     },
     {
       id: 202,
@@ -73,11 +73,11 @@ const courseData = {
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/figuras-literarias-2.mp4",
-      content: "<p>Analizaremos figuras como la aliteración, anáfora, elipsis, así como la antítesis, paradoja, y otras figuras del pensamiento.</p>"
+      content: "<p>En este video conoceremos algunas figuras literarias explicadas con ejemplos. Como sabemos: las figuras literarias o retóricas son procedimientos lingüísticos o estilísticos apartados del modo común de hablar o escribir, que buscan dar una mayor expresividad al lenguaje y, de esta manera, que la experiencia estética logre darse. Con el profesor Paolo Astorga</p>"
     },
     {
       id: 203,
-      title: "Los tropos",
+      title: "Las principales figuras",
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/figuras-literarias-3.mp4",
@@ -106,7 +106,7 @@ const courseData = {
           options: [
             "Metáfora",
             "Ironía",
-            "Anáfora",
+            "Anáfora", 
             "Paradoja"
           ],
           correctAnswer: 2
@@ -276,7 +276,7 @@ function CourseDetailPage() {
   useEffect(() => {
     const fetchCourseData = async () => {
       const userId = localStorage.getItem("userId");
-      const courseNumber = 1;
+      const courseNumber = 6;
       
       if (!userId) {
         console.error("No se encontró userId en localStorage");
