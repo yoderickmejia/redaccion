@@ -73,7 +73,7 @@ const courseData = {
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video2.mp4",
-      content: "<p>Contenido sobre los diferentes tipos de citas: directas, indirectas, y de cita textual.</p>"
+      content: "<p>En este video te enseñamos todo sobre citas y referencias bibliográficas para tu investigación, desde la importancia de incluirlas en tus trabajos hasta la diferencia entre ambos conceptos y las normativas existentes. Con Investiga</p>"
     },
     {
       id: 103,
@@ -81,7 +81,7 @@ const courseData = {
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video.mp4",
-      content: "<p>Contenido sobre las normas más utilizadas para citar fuentes, como APA, MLA y Chicago.</p>"
+      content: "<p>Este video es perfecto para estudiantes y investigadores que necesitan aprender sobre Cita, referencia, fuente, bibliografía y sobre todo  ¿Cuál es la diferencia?. Es informativo y fácil de seguir, y está lleno de ejemplos prácticos.Asesor Virtual Ricardo</p>"
     },
   
     {

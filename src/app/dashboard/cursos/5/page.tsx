@@ -81,7 +81,7 @@ const courseData = {
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video.mp4",
-      content: "<p>Contenido comparativo entre el estilo directo e indirecto, sus usos y cuándo emplearlos correctamente.</p>"
+      content: "<p>En esta clase de español para principiantes, aprenderás sobre el estilo directo e indirecto, que se utiliza para reproducir palabras textuales y reportar lo que alguien ha dicho en diferentes situaciones.  Con Aprender español  </p>"
     },
 
     {

@@ -73,7 +73,7 @@ const courseData = {
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video2.mp4",
-      content: "<p>Contenido sobre los tipos de relaciones fóricas</p>"
+      content: "<p>Contenido sobre los tipos de relaciones fóricas. Con Miss Yuliana Veliz Chuco</p>"
     },
     {
       id: 103,
@@ -81,7 +81,7 @@ const courseData = {
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video.mp4",
-      content: "<p>Contenido sobre los usos de las relaciones fóricas</p>"
+      content: "<p>Contenido sobre los usos de las relaciones fóricas. Con Mi Aula Creativa</p>"
     },
   
     {

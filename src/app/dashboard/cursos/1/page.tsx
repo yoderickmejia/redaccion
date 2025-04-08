@@ -73,7 +73,8 @@ const courseData = {
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video2.mp4",
-      content: "<p>Contenido sobre los tipos de marcadores textuales</p>"
+    
+      content: "<p>En el siguiente video aprenderemos sobre el uso y función de los marcadores textuales en la producción de textos. Para ello, leeremos una serie de textos y analizaremos el uso de los marcadores usado y también al contenido de dichos textos. Con el Profesor Paolo Astorga</p>"content: "<p>En el siguiente video aprenderemos sobre el uso y función de los marcadores textuales en la producción de textos. Para ello, leeremos una serie de textos y analizaremos el uso de los marcadores usado y también al contenido de dichos textos. Con el Profesor Paolo Astorga</p>"
     },
     {
       id: 103,
@@ -81,7 +82,7 @@ const courseData = {
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video.mp4",
-      content: "<p>Contenido sobre los tipos de marcadores textuales</p>"
+        content: "<p>Contenido sobre los conectores de texto; te explicamos en qué consisten, los tipos que hay y te damos muchos ejemplos. ConLifeder Edu</p>"
     },
     {
       id: 104,

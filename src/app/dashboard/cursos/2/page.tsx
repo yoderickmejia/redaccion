@@ -76,7 +76,7 @@ const courseData = {
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video2.mp4",
-      content: "<p>Contenido sobre los tipos de elementos deícticos</p>"
+      content: "<p>Los Deícticos, Qué Son los Deícticos, La Deixis, Los Pronombres Este, Esta, Esto, Estas, Estos, Ese, Esa,  Eso, Esos, Esas, Aquel, Aquella, Aquello, Aquellas, Aquellos, Los Adverbios Aquí, Ahí, Allí.Con La lengua en el oído</p>"
     },
     {
       id: 103,
@@ -85,7 +85,7 @@ const courseData = {
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video.mp4",
-      content: "<p>Contenido sobre los usos de elementos deícticos</p>"
+      content: "<p>Contenido sobre los usos de elementos deícticos. Con Elizabeth Rodríguez</p>"
     },
   
     {
