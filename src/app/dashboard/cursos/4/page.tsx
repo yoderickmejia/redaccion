@@ -165,7 +165,7 @@ const courseData = {
             "Referencia completa con autor, título, año y editorial",
             "Usar números de páginas sin importar el formato"
           ],
-          correctAnswer: 2
+          correctAnswer: 2 
         },
         {
           id: 8,
@@ -198,7 +198,7 @@ const courseData = {
             "No agregar el nombre del autor",
             "Incluir la información completa sobre la fuente"
           ],
-          correctAnswer: 0
+          correctAnswer: 1
         },
         {
           id: 11,
@@ -737,7 +737,6 @@ function CourseDetailPage() {
                   </div>
                   <div className="flex items-center gap-2">
                     {completedLessons.includes(lesson.id) && <Check className="h-4 w-4 text-green-500" />}
-                  
                   </div>
                 </button>
               ))}

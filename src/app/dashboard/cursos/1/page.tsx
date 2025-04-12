@@ -73,7 +73,7 @@ const courseData = {
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video2.mp4",
-      content: "<p>En el siguiente video aprenderemos sobre el uso y función de los marcadores textuales en la producción de textos. Para ello, leeremos una serie de textos y analizaremos el uso de los marcadores usado y también al contenido de dichos textos. Con el Profesor Paolo Astorga</p>"content: "<p>En el siguiente video aprenderemos sobre el uso y función de los marcadores textuales en la producción de textos. Para ello, leeremos una serie de textos y analizaremos el uso de los marcadores usado y también al contenido de dichos textos. Con el Profesor Paolo Astorga</p>"
+      content: "<p>En el siguiente video aprenderemos sobre el uso y función de los marcadores textuales en la producción de textos. Para ello, leeremos una serie de textos y analizaremos el uso de los marcadores usado y también al contenido de dichos textos. Con el Profesor Paolo Astorga</p>"
     },
     {
       id: 103,
