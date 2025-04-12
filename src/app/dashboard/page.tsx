@@ -314,7 +314,7 @@ export default function DashboardPage( ) {
                           size="sm"
                           className="rounded-full bg-violet-600 hover:bg-violet-700 disabled:opacity-50 disabled:cursor-not-allowed"
                           onClick={() => router.push(`/dashboard/cursos/${course.id}`)}
-                          disabled={course.progress >= 100}
+                      
                         >
                           {course.progress >= 100 ? 'Completado' : course.progress >= 25 ? 'Continuar' : 'Comenzar'}
                         </Button>

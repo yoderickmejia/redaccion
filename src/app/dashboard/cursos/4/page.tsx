@@ -108,7 +108,7 @@ const courseData = {
             "Norma APA",
             "Norma MLA",
             "Norma Chicago",
-            "Norma Harvard"
+            "Norma LUX"
           ],
           correctAnswer: 3
         },

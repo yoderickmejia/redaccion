@@ -69,15 +69,15 @@ const courseData = {
     },
     {
       id: 102,
-      title: "Tipos y usos de marcadores textuales",
+      title: "Marcadores textuales y sus tipos",
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video2.mp4",
-      content: "<p>En el siguiente video aprenderemos sobre el uso y función de los marcadores textuales en la producción de textos. Para ello, leeremos una serie de textos y analizaremos el uso de los marcadores usado y también al contenido de dichos textos. Con el Profesor Paolo Astorga</p>"
+      content: "<p>En el siguiente video aprenderemos sobre el uso y función de los marcadores textuales en la producción de textos. Para ello, leeremos una serie de textos y analizaremos el uso de los marcadores usado y también al contenido de dichos textos. Con el Profesor Paolo Astorga</p>"content: "<p>En el siguiente video aprenderemos sobre el uso y función de los marcadores textuales en la producción de textos. Para ello, leeremos una serie de textos y analizaremos el uso de los marcadores usado y también al contenido de dichos textos. Con el Profesor Paolo Astorga</p>"
     },
     {
       id: 103,
-      title: "Ejemplos de marcadores textuales",
+      title: "Marcadores textuales y sus tipos",
       isCompleted: false,
       type: "video",
       VideoURL: "/videos/video.mp4",
